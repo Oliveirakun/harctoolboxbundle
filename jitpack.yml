@@ -1,0 +1,8 @@
+jdk:
+  - oraclejdk8
+before_install:
+   - tools/build-DevSlashLirc.sh
+   - tools/build-dependencies.sh
+install:
+   - echo "Installing only HarcHardware"
+   - mvn -pl HarcHardware clean install -DskipTests
