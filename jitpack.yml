@@ -5,4 +5,4 @@ before_install:
    - tools/build-dependencies.sh
 install:
    - echo "Installing only HarcHardware"
-   - mvn -pl HarcHardware clean install -DskipTests
+   - mvn clean install -pl HarcHardware -am -DskipTests 
